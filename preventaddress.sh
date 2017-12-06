@@ -1,15 +1,11 @@
 #!/bin/bash
 
-#Versao: 2017.12.06
-
-#Devs
-# Jonathan Scheibel - jonathansmorais@gmail.com - https://www.linkedin.com/in/jonathan-scheibel/
-
-#Sobre:
 # Um script para verificação de seu endereco em tempo real. 
 # O mesmo desconecta-te em casos de exposicao.
+# Jonathan Scheibel - jonathansmorais@gmail.com - https://www.linkedin.com/in/jonathan-scheibel/
+# Versao: 2017.12.06
 
-NAME_APPLICATION="checkAddress";
+NAME_APPLICATION="preventaddress";
 URL_SERVICE="https://start.parrotsec.org/ip/"
 
 function checkMyAddress  {
