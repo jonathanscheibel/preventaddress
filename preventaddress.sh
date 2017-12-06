@@ -9,15 +9,8 @@
 # Um script para verificação de seu endereco em tempo real. 
 # O mesmo desconecta-te em casos de exposicao.
 
-#Utilizacao:
-#./checkRede.sh [dispo. de rede] [endereco nao desejavel]
-
-#Exemplo:
-#./checkRede.sh eth0 131.151.12.2
-
 NAME_APPLICATION="checkAddress";
 URL_SERVICE="https://start.parrotsec.org/ip/"
-
 
 function checkMyAddress  {
 	echo "$NAME_APPLICATION - Verificando exposicao de endereco..."
@@ -36,7 +29,6 @@ function checkMyAddress  {
 }
 	
 if [ `whoami` == 'root' ]; then	
-	notify "aaaa"
 	if [ "$1" == "" ]; then
 		clear
 		echo "$NAME_APPLICATION - DISPOSITIVOS DE REDE:"
